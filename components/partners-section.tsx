@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function PartnersSection() {
   const partners = [
@@ -130,8 +131,8 @@ export function PartnersSection() {
             Our <span className="text-[#e62b1e]">Partners</span>
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            TEDx Pasha Street is made possible thanks to the generous support of
-            our partners.
+            <TedxPashaStreet /> is made possible thanks to the generous support
+            of our partners.
           </p>
         </div>
         <div className="space-y-12">

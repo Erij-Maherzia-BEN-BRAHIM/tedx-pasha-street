@@ -10,6 +10,7 @@ import {
   DialogTrigger,
 } from "./ui/dialog";
 import { Label } from "./ui/label";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function ContactSection() {
   return (
@@ -21,8 +22,8 @@ export function ContactSection() {
               Get In Touch
             </h2>
             <p className="mt-4">
-              Have questions about TED<sup>x</sup> Pasha Street? Want to become
-              a speaker or sponsor? We'd love to hear from you.
+              Have questions about TEDxPasha Street? Want to become a speaker or
+              sponsor? We'd love to hear from you.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Dialog>
@@ -36,7 +37,9 @@ export function ContactSection() {
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Contact TEDx Pasha Street</DialogTitle>
+                    <DialogTitle>
+                      Contact <TedxPashaStreet />
+                    </DialogTitle>
                     <DialogDescription>
                       Get in touch with us for any questions about the event,
                       speaking opportunities, or partnerships.

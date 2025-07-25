@@ -1,3 +1,4 @@
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
@@ -10,8 +11,8 @@ export function NewsletterSection() {
             Stay <span className="text-[#e62b1e]">Updated</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Subscribe to our newsletter to receive updates about TED<sup>x</sup>{" "}
-            Pasha Street, including speaker announcements and ticket
+            Subscribe to our newsletter to receive updates about{" "}
+            <TedxPashaStreet />, including speaker announcements and ticket
             information.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-2">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function Footer() {
   return (
@@ -7,15 +8,11 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="md:w-1/3">
             <Link href="/" className="text-3xl font-bold mb-4 block">
-              <span className="text-[#e62b1e]">
-                TED
-                <sup>x</sup>
-              </span>
-              <span className="text-white">Pasha Street</span>
+              <TedxPashaStreet />
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
-              This independent TED<sup>x</sup> event is operated under license
-              from TED.
+              This independent <span className="text-[#e62b1e]"> TEDx</span>{" "}
+              event is operated under license from TED.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -92,7 +89,8 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-6 border-t border-gray-800 text-center text-sm text-gray-400">
           <p>
-            © {new Date().getFullYear()} TEDx Pasha Street. All rights reserved.
+            © {new Date().getFullYear()} <TedxPashaStreet />. All rights
+            reserved.
           </p>
           <p className="mt-2">
             <p className="mt-3 text-xs text-gray-500">
