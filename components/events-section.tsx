@@ -24,7 +24,7 @@ export function EventsSection() {
     return () => clearInterval(timer);
   }, []);
 
-  const calculateTimeRemaining = (eventDate) => {
+  const calculateTimeRemaining = (eventDate: string | number | Date) => {
     const now = currentTime;
     const target = new Date(eventDate);
     const difference = target.getTime() - now.getTime();
@@ -43,7 +43,12 @@ export function EventsSection() {
     return { days, hours, minutes, seconds };
   };
 
-  const formatCountdown = (timeRemaining) => {
+  const formatCountdown = (timeRemaining: {
+    days: any;
+    hours: any;
+    minutes: number;
+    seconds: number;
+  }) => {
     if (!timeRemaining) return null;
 
     const { days, hours, minutes, seconds } = timeRemaining;
