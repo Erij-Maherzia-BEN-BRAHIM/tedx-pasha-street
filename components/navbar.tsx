@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold">
-              <span className="text-[#e62b1e]">
-                TED<sup>x</sup>
-              </span>
-              <span className="text-black">Pasha Street</span>
+              <TedxPashaStreet />
             </Link>
           </div>
 
