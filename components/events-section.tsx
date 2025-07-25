@@ -13,29 +13,29 @@ export function EventsSection() {
   const events = [
     {
       id: 1,
-      title: "TEDxPasha Street 2024",
-      date: "March 15, 2024",
-      location: "Pasha Street Cultural Center",
-      attendees: 200,
+      title: "TEDxPasha Street",
+      date: "December 27, 2025",
+      location: "Sainte-Croix Church of Tunis",
+      attendees: 300,
       status: "upcoming",
       description:
-        "Join us for our biggest event yet, featuring 8 inspiring speakers from diverse backgrounds.",
+        "Now in its third edition, TEDxPashaStreet continues to grow as a hub for bold ideas and powerful voices. This year, we bring together a new generation of change-makers, artists, and visionaries to spark conversations that move minds and hearts.",
     },
     {
       id: 2,
-      title: "TEDxPasha Street 2023",
+      title: "TEDxPasha Street | Inside In",
       date: "October 20, 2023",
-      location: "Pasha Street Theater",
-      attendees: 150,
+      location: "Sainte-Croix Church of Tunis",
+      attendees: 200,
       status: "past",
       description:
-        "Our inaugural event brought together innovators and thought leaders for an unforgettable experience.",
+        "Our second TEDxPashaStreet brings together a new wave of innovators, storytellers, and visionaries for another unforgettable experience.",
     },
     {
       id: 3,
-      title: "TEDxPasha Street 2022",
-      date: "June 10, 2022",
-      location: "Pasha Street Community Hall",
+      title: "TEDxPasha Street | Brand Legacy",
+      date: "October 20, 2023",
+      location: "Medrassa Bir Lahjar",
       attendees: 100,
       status: "past",
       description:
@@ -56,12 +56,12 @@ export function EventsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {events.map((event) => (
             <Card key={event.id} className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-xl font-bold">
+                  <CardTitle className="text-lg font-bold">
                     {event.title}
                   </CardTitle>
                   <span
