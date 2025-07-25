@@ -1,6 +1,7 @@
 import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function AboutSection() {
   return (
@@ -9,22 +10,23 @@ export function AboutSection() {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-              About{" "}
-              <span className="text-[#e62b1e]">
-                TED<sup>x</sup>
-              </span>{" "}
-              Pasha Street
+              About <TedxPashaStreet />
             </h2>
             <p className="mt-4 text-muted-foreground">
-              TEDx Pasha Street is an independently organized TED event that
-              brings together innovators, thinkers, and doers from our community
-              to share ideas worth spreading.
+              From the vibrant heart of Tunis, <TedxPashaStreet /> is a platform
+              for bold ideas, creative voices, and untold stories that reflect
+              the energy, complexity, and potential of our local and global
+              communities. Rooted in the spirit of{" "}
+              <span className="text-[#e62b1e]">TED</span>'s mission—“Ideas
+              change everything”—we curate a unique experience that blends
+              inspiring talks, powerful performances, and deep human connection.
             </p>
             <p className="mt-4 text-muted-foreground">
-              In the spirit of ideas worth spreading, TEDx is a program of
-              local, self-organized events that bring people together to share a
-              TED-like experience. At a TEDx event, TED Talks video and live
-              speakers combine to spark deep discussion and connection.
+              More than just an event, <TedxPashaStreet /> is a movement that
+              lives beyond the stage. It's where change-makers, dreamers, and
+              doers come together to explore new perspectives, spark dialogue,
+              and imagine new futures. Be part of the conversation. Join us, get
+              inspired, and help shape what comes next.
             </p>
             <div className="mt-8">
               <Link
