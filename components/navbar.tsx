@@ -42,14 +42,14 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <Link href="/admin">
+              {/* <Link href="/admin">
                 <Button
                   size="sm"
                   className="bg-[#e62b1e] hover:bg-[#c4251a] text-white"
                 >
                   Login
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
 
