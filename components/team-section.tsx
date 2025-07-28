@@ -1,5 +1,6 @@
-import Image from "next/image"
-import { Linkedin, Twitter, Mail } from "lucide-react"
+import Image from "next/image";
+import { Linkedin, Twitter, Mail } from "lucide-react";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function TeamSection() {
   const team = [
@@ -51,7 +52,7 @@ export function TeamSection() {
         email: "david@tedxpashastreet.com",
       },
     },
-  ]
+  ];
 
   return (
     <section id="team" className="py-20 bg-gray-50">
@@ -61,7 +62,8 @@ export function TeamSection() {
             Meet Our <span className="text-[#e62b1e]">Team</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The passionate individuals behind TEDxPasha Street who work tirelessly to bring you inspiring events.
+            The passionate individuals behind <TedxPashaStreet /> who work
+            tirelessly to bring you inspiring events.
           </p>
         </div>
 
@@ -72,17 +74,30 @@ export function TeamSection() {
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className="aspect-square relative">
-                <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                <Image
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-black mb-2">{member.name}</h3>
+                <h3 className="text-xl font-bold text-black mb-2">
+                  {member.name}
+                </h3>
                 <p className="text-[#e62b1e] font-medium mb-3">{member.role}</p>
                 <p className="text-gray-600 text-sm mb-4">{member.bio}</p>
                 <div className="flex space-x-3">
-                  <a href={member.social.linkedin} className="text-gray-400 hover:text-[#e62b1e] transition-colors">
+                  <a
+                    href={member.social.linkedin}
+                    className="text-gray-400 hover:text-[#e62b1e] transition-colors"
+                  >
                     <Linkedin className="h-5 w-5" />
                   </a>
-                  <a href={member.social.twitter} className="text-gray-400 hover:text-[#e62b1e] transition-colors">
+                  <a
+                    href={member.social.twitter}
+                    className="text-gray-400 hover:text-[#e62b1e] transition-colors"
+                  >
                     <Twitter className="h-5 w-5" />
                   </a>
                   <a
@@ -98,5 +113,5 @@ export function TeamSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

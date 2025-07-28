@@ -22,8 +22,8 @@ export function ContactSection() {
               Get In Touch
             </h2>
             <p className="mt-4">
-              Have questions about TEDxPasha Street? Want to become a speaker or
-              sponsor? We'd love to hear from you.
+              Have questions about <TedxPashaStreet disableTEDRed />? Want to
+              become a speaker or sponsor? We'd love to hear from you.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Dialog>

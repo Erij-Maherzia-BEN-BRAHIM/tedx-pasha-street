@@ -2,6 +2,13 @@ import Link from "next/link";
 import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function Footer() {
+  const socialLinks = [
+    { label: "LinkedIn", link: "" },
+    { label: "Facebook", link: "" },
+    { label: "Instagram", link: "" },
+    { label: "Twitter", link: "" },
+  ];
+
   return (
     <footer className="bg-black text-white py-12">
       <div className="container">
@@ -56,33 +63,24 @@ export function Footer() {
             <div>
               <h3 className="font-medium mb-3">Follow Us</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    LinkedIn
-                  </a>
-                </li>
+                {socialLinks.map((social) => (
+                  <li key={social.label}>
+                    <a
+                      href={social.link}
+                      className="hover:text-white transition-colors"
+                      target="_blank"
+                    >
+                      {social.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
               <h3 className="font-medium mb-3">Contact</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>xxxxxx@xxxx.com</li>
-                <li>+216 xx xxx xxx</li>
+                <li>tedxpashastreet@gmail.com</li>
+                <li>+216 54 567 717</li>
               </ul>
             </div>
           </div>

@@ -67,18 +67,18 @@ export function EventsSection() {
   const events = [
     {
       id: 1,
-      title: "TEDxPasha Street",
+      title: "TEDxPasha Street | COUNTDOWN",
       date: "December 27, 2025",
       location: "Sainte-Croix Church of Tunis",
       attendees: 300,
       status: "upcoming",
       description:
-        "Now in its third edition, TEDxPashaStreet continues to grow as a hub for bold ideas and powerful voices. This year, we bring together a new generation of change-makers, artists, and visionaries to spark conversations that move minds and hearts.",
+        "The third edition of TEDxPasha Street Countdown will bring together inspiring speakers, changemakers, and bold ideas focused on climate change and climate justice. This year’s event will highlight climate solutions and share powerful stories from across Tunisia and beyond. It contributes to the global Countdown initiative, which aims to cut greenhouse gas emissions in half by 2030.",
     },
     {
       id: 2,
       title: "TEDxPasha Street | Inside In",
-      date: "October 20, 2023",
+      date: "February 22, 2025",
       location: "Sainte-Croix Church of Tunis",
       attendees: 200,
       status: "past",

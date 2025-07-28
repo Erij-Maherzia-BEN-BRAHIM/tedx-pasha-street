@@ -137,9 +137,6 @@ export function PartnersSection() {
         </div>
         <div className="space-y-12">
           <div>
-            <h3 className="text-center text-lg font-medium mb-6">
-              Platinum Partners
-            </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               {[1, 2, 3].map((partner) => (
                 <Card
@@ -151,48 +148,6 @@ export function PartnersSection() {
                     alt={`Platinum Partner ${partner}`}
                     width={200}
                     height={100}
-                    className="max-h-full w-auto"
-                  />
-                </Card>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="text-center text-lg font-medium mb-6">
-              Gold Partners
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[1, 2, 3, 4].map((partner) => (
-                <Card
-                  key={`gold-${partner}`}
-                  className="bg-white p-4 rounded-lg flex items-center justify-center h-24"
-                >
-                  <Image
-                    src={`/placeholder.svg?height=80&width=160&text=Partner+Logo`}
-                    alt={`Gold Partner ${partner}`}
-                    width={160}
-                    height={80}
-                    className="max-h-full w-auto"
-                  />
-                </Card>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3 className="text-center text-lg font-medium mb-6">
-              Silver Partners
-            </h3>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-              {[1, 2, 3, 4, 5, 6].map((partner) => (
-                <Card
-                  key={`silver-${partner}`}
-                  className="bg-white p-3 rounded-lg flex items-center justify-center h-20"
-                >
-                  <Image
-                    src={`/placeholder.svg?height=60&width=120&text=Partner+Logo`}
-                    alt={`Silver Partner ${partner}`}
-                    width={120}
-                    height={60}
                     className="max-h-full w-auto"
                   />
                 </Card>

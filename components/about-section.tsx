@@ -17,9 +17,10 @@ export function AboutSection() {
               for bold ideas, creative voices, and untold stories that reflect
               the energy, complexity, and potential of our local and global
               communities. Rooted in the spirit of{" "}
-              <span className="text-[#e62b1e]">TED</span>'s mission—“Ideas
-              change everything”—we curate a unique experience that blends
-              inspiring talks, powerful performances, and deep human connection.
+              <span className="text-[#e62b1e] font-bold">TED</span>'s
+              mission—“Ideas change everything”—we curate a unique experience
+              that blends inspiring talks, powerful performances, and deep human
+              connection.
             </p>
             <p className="mt-4 text-muted-foreground">
               More than just an event, <TedxPashaStreet /> is a movement that

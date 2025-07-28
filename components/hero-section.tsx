@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { TedxPashaStreet } from "./common/tedx-pasha-street";
 
 export function HeroSection() {
   return (
@@ -19,10 +20,12 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto flex flex-col items-center justify-center min-h-screen px-4 text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl max-w-3xl">
-          <span className="text-[#e62b1e]">Ideas</span> change everything at{" "}
-          <span className="text-[#e62b1e]">TEDx</span>Pasha Street
-        </h1>
+        <div className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl max-w-3xl">
+          <span className="text-[#e62b1e]">Ideas</span> change everything{" \n"}
+          <div>
+            at <TedxPashaStreet />
+          </div>
+        </div>
         <p className="mt-6 max-w-2xl text-lg md:text-xl text-gray-300">
           Join us for a journey of inspiring talks, meaningful connections, and
           ideas that will change your perspective.
